@@ -1,0 +1,14 @@
+{
+  "name": "ICHOR",
+  "logo": "https://kekbull.com/assets/ichor-mark.png",
+  "description": "KEKBULL ICHOR program on Solana mainnet-beta. Convert stays paused until after graduation.",
+  "project_url": "https://dao.kekbull.com",
+  "contacts": [
+    "email:crypto.raistlin@gmail.com",
+    "telegram:https://t.me/kekbull"
+  ],
+  "policy": "https://github.com/KEKBULL-ICHOR-DAO/ichor/blob/main/SECURITY.md",
+  "preferred_languages": ["en"],
+  "source_code": "https://github.com/KEKBULL-ICHOR-DAO/ichor",
+  "version": "1.0.0"
+}
