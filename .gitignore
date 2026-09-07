@@ -1,0 +1,8 @@
+target/
+.anchor/
+**/*.so
+node_modules/
+dist/
+.env
+.env.*
+*.tsbuildinfo

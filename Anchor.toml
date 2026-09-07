@@ -1,0 +1,25 @@
+# Isolated KEKBULL → ICHOR workspace.
+# Program identity is NOT declared here. `declare_id!(env!("KEKBULL_ICHOR_PROGRAM_ID"))`
+# is the only identity seam. Supply the deploy-time pubkey at build; never generate
+# or commit a program keypair in this directory.
+
+[toolchain]
+anchor_version = "0.32.1"
+
+[features]
+resolution = true
+skip-lint = false
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+# Provider wallet is the local Solana CLI id. This workspace never writes that file
+# and never ships a program or mint keypair.
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+# TypeScript clients/tests are intentionally absent. Parser/math/account
+# validation lives in the program crate. Devnet integration is a later gate.
+test = "echo 'ichor: run cargo test -p kekbull_ichor after KEKBULL_ICHOR_PROGRAM_ID is set. Devnet integration is not in this workspace.'"
